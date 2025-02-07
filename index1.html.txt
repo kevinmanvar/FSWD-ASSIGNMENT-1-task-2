@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-blue-900 text-white p-5 hidden md:block">
+            <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+            <ul>
+                <li class="mb-4"><a href="#" class="hover:text-blue-300">Home</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-blue-300">Analytics</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-blue-300">Settings</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="bg-white shadow-md p-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold">Dashboard</h1>
+                <button class="md:hidden text-blue-900">☰</button>
+            </header>
+            
+            <!-- Cards Section -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Card 1</h3>
+                    <p>Some important data</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Card 2</h3>
+                    <p>More insights</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Card 3</h3>
+                    <p>Additional metrics</p>
+                </div>
+            </section>
+            
+            <!-- Table Section -->
+            <section class="mt-6">
+                <h2 class="text-xl font-bold mb-4">Recent Activity</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="p-3 text-left">Name</th>
+                                <th class="p-3 text-left">Status</th>
+                                <th class="p-3 text-left">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border-b">Kevin manvar</td>
+                                <td class="p-3 border-b text-green-500">Active</td>
+                                <td class="p-3 border-b">2024-02-07</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border-b">keyur </td>
+                                <td class="p-3 border-b text-red-500">Inactive</td>
+                                <td class="p-3 border-b">2024-02-06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
